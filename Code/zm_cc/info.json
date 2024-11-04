@@ -1,0 +1,56 @@
+{
+  "manufacturer": "ziddymakes",
+  "keyboard_name": "ZM-CC",
+  "url": "shop.ziddymakes.com",
+  "maintainer": "ziddymakes",
+  "processor": "RP2040",
+  "bootloader": "rp2040",
+  "board": "GENERIC_RP_RP2040",
+  "usb": {
+      "device_version": "2.0.2",
+      "pid": "0x7547",
+      "vid": "0x4879"
+  },
+  "features": {
+      "audio": false,
+      "backlight": false,
+      "bootmagic": true,
+      "command": false,
+      "console": false,
+      "encoder": true,
+      "extrakey": true,
+      "mousekey": true,
+      "nkro": false,
+      "midi": true,
+  },
+  "matrix_pins": {
+      "direct": [
+        ["GP0", "GP1", "GP2", null],
+        ["GP3", "GP4", "GP5", null],
+        ["GP26", "GP6", "GP7", "GP8"]
+    ]
+  },
+  "encoder": {
+    "rotary": [
+        {"pin_a": "GP14", "pin_b": "GP15"}
+    ]
+  },
+  "layouts": {
+      "LAYOUT_zm_k9": {
+          "layout": [
+              {"matrix": [0, 0], "x": 0, "y": 0},
+              {"matrix": [0, 1], "x": 1, "y": 0},
+              {"matrix": [0, 2], "x": 2, "y": 0},
+
+              {"matrix": [1, 0], "x": 0, "y": 1},
+              {"matrix": [1, 1], "x": 1, "y": 1},
+              {"matrix": [1, 2], "x": 2, "y": 1},
+
+              {"matrix": [2, 0], "x": 0, "y": 2},
+              {"matrix": [2, 1], "x": 1, "y": 2},
+              {"matrix": [2, 2], "x": 2, "y": 2},
+              {"matrix": [2, 3], "x": 3, "y": 2}
+          ]
+      }
+  }
+}
